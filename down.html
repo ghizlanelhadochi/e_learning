@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .arrowe {
+        border: solid rgb(255, 255, 255);
+        border-width: 0 10px 10px 0;
+        display: inline-block;
+        padding: 38px;
+        transform: rotate(45deg);
+         -webkit-transform: rotate(45deg);
+        }
+        
+       
+        @keyframes rectangle {
+            0%{
+               opacity: 0;
+               margin-top: 0px;
+            }
+            25%{
+                opacity: 0.25;
+                margin-top: 50px;
+
+
+            }
+            75%{
+                opacity: 0.75;
+                margin-top: 90px;
+
+            }
+            100%{
+                opacity: 1;
+                margin-top: 150px;
+
+            }
+            
+        }
+
+        ul li .arrowe {
+        opacity: 0; /* set initial opacity to 0 */
+        animation: fadeIn 2s infinite; /* apply animation with 2s duration and forwards fill mode */
+    }
+
+    ul li:nth-child(1) .arrowe {
+        animation-delay: 0s; /* set delay for the first arrow element */
+    }
+
+    ul li:nth-child(2) .arrowe {
+        animation-delay: 0.5s; /* set delay for the second arrow element */
+    }
+
+    ul li:nth-child(3) .arrowe {
+        animation-delay: 1s; /* set delay for the third arrow element */
+    }
+
+    ul li:nth-child(4) .arrowe {
+        animation-delay: 1.5s; /* set delay for the fourth arrow element */
+    }
+    @keyframes fadeIn {
+        from { opacity: 1; } /* set initial opacity to 0 */
+        to { opacity: 0; } /* set final opacity to 1 */
+    }
+  
+     
+    </style>
+</head>
+<body style="background: rgb(241, 141, 141);">
+        <div style="margin-left: 120px; list-style: none;">
+            <i class="arrow "></i>
+
+        </div>
+        
+        <div style="margin-left: 550px; list-style: none;">
+            <ul style="list-style: none;">
+                <li> <i class="arrowe "></i></li>
+                <li> <i class="arrowe "></i></li>
+                <li> <i class="arrowe "></i></li>
+                <li> <i class="arrowe "></i></li>
+
+            </ul>
+
+        </div>
+
+</body>
+</html>
